@@ -48,6 +48,7 @@ class ScreenPusher:
                 self.notify_users(text=f"Произошла ошибка: {e}")
 
 
+
 if __name__ == '__main__':
     sp = ScreenPusher(token=config.BOT_TOKEN, user_list=config.USER_LIST)
     sp.screenshotWorker(text=config.TEXT_FOR_SEND, timeout=config.TIMEOUT)
